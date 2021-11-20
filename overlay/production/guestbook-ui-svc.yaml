@@ -1,7 +1,8 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: guestbook-ui-prod
+  name: guestbook-ui
 spec:
-  selector:
-    app: guestbook-ui
+  ports:
+  - port: 8000
+    targetPort: 80
